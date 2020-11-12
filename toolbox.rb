@@ -9,6 +9,8 @@ end
 
 container_name = ARGV[0] 
 container_port = ARGV[1] 
-container_root_password = ARGV[2] 
+container_root_password = ARGV[2]
+container_user_name = ARGV[3] 
+container_password = ARGV[4]
 
-container_creation(container_name, container_port, container_root_password)
+container_creation(container_name, container_port, container_root_password, container_user_name, container_password)
