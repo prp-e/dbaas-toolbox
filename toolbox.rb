@@ -1,7 +1,7 @@
 require 'socket' 
 
 def container_creation(name, port, root_password)
-    `docker run -p #{port}:3306 --name #{name}  -e MYSQL_ROOT_PASSWORD=#{root_password} -v $(pwd)/conf.d/my-custom.cnf:/etc/mysql/conf.d -d mysql/mysql-server`
+    `docker run -p #{port}:3306 --name #{name}  -e MYSQL_ROOT_HOST=% -e MYSQL_ROOT_PASSWORD=#{root_password} -v $(pwd)/conf.d/my-custom.cnf:/etc/mysql/conf.d -d mysql/mysql-server`
 end 
 
 container_name = ARGV[0] 
