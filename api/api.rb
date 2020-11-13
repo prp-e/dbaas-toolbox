@@ -22,7 +22,7 @@ def container_creation(name, username, password)
     end
     
     return port 
-    
+
 end 
 
 before do 
@@ -35,5 +35,5 @@ end
 
 post '/dbaas' do 
     push = @req_data 
-    push.inspect 
+    push.inspect.class 
 end 
