@@ -4,7 +4,7 @@ This is just the base ground of my new company or startup I should say. In this 
 
 ## TODO 
 
-- [ ] Randomizing the ports 
+- [x] Randomizing the ports 
 - [ ] Making a simple API for the basic tests 
 - [ ] Handling `MYSQL_USER` priveleges, so no `MYSQL_ROOT_PASSWORD` will be needed of course. 
 - [ ] Integrating the whole thing with Rails application. 
