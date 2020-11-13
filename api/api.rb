@@ -35,5 +35,7 @@ end
 
 post '/dbaas' do 
     push = @req_data 
-    push.inspect.class 
+    push = JSON.parse(push) 
+
+    push.to_json 
 end 
