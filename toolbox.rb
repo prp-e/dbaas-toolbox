@@ -17,8 +17,7 @@ def container_creation(name, username, password)
 end 
 
 container_name = ARGV[0]  
-container_root_password = ARGV[1]
-container_user_name = ARGV[2] 
-container_password = ARGV[3]
+container_user_name = ARGV[1] 
+container_password = ARGV[2]
 
-container_creation(container_name, container_root_password, container_user_name, container_password, container_database)
+container_creation(container_name, container_user_name, container_password, container_database)
