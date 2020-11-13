@@ -5,6 +5,7 @@ This is just the base ground of my new company or startup I should say. In this 
 ## TODO 
 
 - [x] Randomizing the ports 
+- [ ] Check if port is already taken from the network adapter. 
 - [ ] Making a simple API for the basic tests 
 - [x] Handling `MYSQL_USER` priveleges, so no `MYSQL_ROOT_PASSWORD` will be needed of course. 
 - [ ] Integrating the whole thing with Rails application. 
