@@ -37,7 +37,7 @@ post '/dbaas' do
     push = @req_data 
     push = JSON.parse(push) 
     db_port = container_creation(push['database'], push['username'], push['password'])
-    final_result = {"database" => push['database'], "port" => db_port}
+    final_result = {"database" => push['database'], "port" => db_port, "phpmyadmin_port" => db_port + 1}
 
     final_result.to_json 
 end 
